@@ -1,0 +1,92 @@
+% LaTeX Template for Project Report, Version 2.0
+% (Abstracted from a Major Project Report at CSED, NIT Calicut but can be
+% modified easily to use for other reports also.)
+%
+% Released under Creative Commons Attribution license (CC-BY)
+% Info: http://creativecommons.org/licenses/by/3.0/
+%
+% Created by: Kartik Singhal
+% BTech CSE Batch of 2009-13
+% NIT Calicut
+% Contact Info: kartiksinghal@gmail.com
+%
+% It is advisable to learn the basics of LaTeX before using this template.
+% A good resource to start with is http://en.wikibooks.org/wiki/LaTeX/
+%
+% All template fields are marked with a pair of angular brackets e.g. <title here>
+% except for the ones defining citation names in ref.tex.
+%
+% Empty space after chapter/section/subsection titles can be used to insert text.
+%
+% Just compile this file using pdflatex after making all required changes.
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[pdftex]{graphicx} %for embedding images
+\usepackage{url} %for proper url entries
+\usepackage[margin=1.2in]{geometry}
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
+%\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{textgreek}
+\usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=1.2 in]{geometry}
+\usepackage{longtable}
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}{\chaptertitlename\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{-30pt}{10pt}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{rotating}
+
+\newcommand{\R}{\mathbb{R}}
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
+\setlength{\parskip}{2mm}%
+\setlength{\parindent}{0pt}%
+
+\begin{document}
+
+\renewcommand\bibname{Bibliography} %Renames "Bibliography" to "References" on ref page
+\renewcommand{\chaptername}{}
+\setcounter{chapter}{0}
+
+%include other pages
+\input{01_CoverPage.tex}
+%\input{certificate}
+%\input{abstract}
+
+\pagenumbering{roman} %numbering before main content starts
+\tableofcontents
+%\listoftables
+%\listoffigures
+
+\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
+
+\input{02_Exercise_1.tex} %objective changed to problem definition
+\input{03_Exercise_2.tex} %literature survey included in this
+\input{04_Exercise_3.tex}
+\input{05_Exercise_4.tex}
+%\input{06_Exercise_5.tex}
+%\input{07_References.tex}
+%\input{08_Appendices.tex}
+
+\end{document}

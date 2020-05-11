@@ -1,0 +1,19 @@
+\chapter{Static asset allocation with constant expected returns and volatility}
+Consider a mean-variance criterion for asset allocation:
+\begin{equation}
+    \underset{\{ a\}}{\textrm{max}} \hspace{0.3cm} \mu_p - \frac{\lambda}{2} \hspace{0.15cm} \sigma_p ^2 , \hspace{0.7cm} \mu = \alpha ' + (1 - e' \alpha)R_f, \hspace{0.7cm} \sigma_p ^2 = \alpha' \Sigma \alpha
+\end{equation}
+
+\subsection{Give the expression for the optimal portfolio weights.}
+We can compute the first order conditions, which are the following:
+$$
+\mu - \lambda \Sigma \alpha = 0
+$$
+and the optimal weights $\alpha^\star$ are given by:
+$$
+\alpha^\star = \frac{1}{\lambda} \Sigma^{-1} \mu
+$$
+
+
+\subsection{Assume that expected returns are given by sample means and that the covariance
+matrix is given by the sample covariance matrix. Compute the optimal weight vector $\alpha^\star$ for and $\lambda = 2$ and 10.}
