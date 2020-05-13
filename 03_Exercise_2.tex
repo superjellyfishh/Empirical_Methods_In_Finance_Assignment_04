@@ -1,13 +1,13 @@
 \chapter{Static Asset Allocation}
 Consider a mean-variance criterion for asset allocation:
 \begin{equation}
-    \underset{\{ a\}}{\textrm{max}} \hspace{0.3cm} \mu_p - \frac{\lambda}{2} \hspace{0.15cm} \sigma_p ^2 , \hspace{0.7cm} \mu = \alpha ' + (1 - e' \alpha)R_f, \hspace{0.7cm} \sigma_p ^2 = \alpha' \Sigma \alpha
+    \underset{\{ a\}}{\textrm{max}} \hspace{0.3cm} \mu_p - \frac{\lambda}{2} \hspace{0.15cm} \sigma_p ^2 , \hspace{0.7cm} \mu_p = \alpha'\mu + (1 - e' \alpha)R_f, \hspace{0.7cm} \sigma_p ^2 = \alpha' \Sigma \alpha
 \end{equation}
 
 \section{Optimal Portfolio Weights.}
-We can compute the first order conditions, which are the following:
+We can compute the first order conditions, which is the following:
 $$
-\mu - \lambda \Sigma \alpha = 0
+(\mu-e'R_f) - \lambda \Sigma \alpha = 0
 $$
 and the optimal weights $\alpha^\star$ are given by:
 $$
@@ -19,3 +19,11 @@ $$
 
 
 Unconstrained mean variance allocation allows extreme weights, it is not surprising therefore to see short and leveraged positions. In our case XXX is shorted and the investor should massively leverage on YYY. The change on the risk aversion coefficient drives the investor's allocation choice towards more conservative position in riskless asset classes as we can see by....
+
+\begin{table}[h]
+    \centering
+    \input{lambda_2_10}
+    \caption{Caption}
+    \label{lambda210}
+\end{table}
+
