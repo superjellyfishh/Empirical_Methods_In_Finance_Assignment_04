@@ -1,1 +1,20 @@
-\chapter{Estimation of a GARCH model}
+\chapter{Estimation of a GARCH Model}
+
+\section{Non-Normality \& Auto-Correlation of Excess Returns}
+
+Kolgomorov rejects normality for\\
+Ljung-Box rejects the no-autocorrelation hypothesis for
+
+\section{AR(1) Model}
+\textit{Only rho for equity and constant for bond are significant. The results imply
+predictability for equity but the R2 is below 1\%. This weak predictive power will be a
+problem in Q4.}
+
+\section{ARCH Effect}
+\textit{After filtering by the AR(1) model the residuals still show strong heteroskedasticity effects, as detected by Ljung-Box test of the squared residuals. The p-values are zero in both cases. Therefore, we should estimate a GARCH model to
+capture this effect.}\\
+\textit{We clearly reject the null hypothesis of no ARCH effect in the squared residuals, in other words we observe the phenomenon of volatility clustering since the squared returns are predictable. Under this framework, a GARCH model could be a possible way to manage this behaviour, while the estimations are following in the next point.}
+
+\section{Parameter Estimates}
+
+\section{Results Plots}
